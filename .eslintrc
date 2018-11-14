@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": "strongloop",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "globals": {
+    "Promise": true,
+    "describe": true,
+    "it": true,
+    "jasmine": true,
+    "expect": true,
+    "beforeEach": true,
+    "spyOn": true
+  },
+  "rules": {
+    "no-new": 0,
+    "no-trailing-spaces": 0
+  }
+}

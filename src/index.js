@@ -1,7 +1,7 @@
 import express from 'express';
 import expressSetting from './config/expressConfig.js';
 import Route from './routes/route.js';
-import {dbConfig} from './config/dbConfig';
+import { dbConfig } from './config/dbConfig';
 /**
  * should check the default database
  **/

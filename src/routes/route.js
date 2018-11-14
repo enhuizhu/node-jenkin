@@ -27,10 +27,20 @@ export default class route {
       );
     });
 
-    this.app.get('/swap/getSwapSavedSearch', (req, res) => {
+    this.app.post('/createProject', (req, res) => {
+      console.log('hello, it is crate project')
       this.response({
-        controller: 'swap',
-        action: 'getSwap',
+        controller: 'project',
+        action: 'create',
+      }, 
+      req, 
+      res);
+    });
+
+    this.app.post('/getProjects', (req, res) => {
+      this.response({
+        controller: 'project',
+        action: 'getAllProjects',
       }, 
       req, 
       res);

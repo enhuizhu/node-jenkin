@@ -20,6 +20,10 @@ module.exports = {
     }
   },
 
+  folderExists: folderPath => {    
+    return fs.existsSync(folderPath);
+  },
+
   getFileSize: file => {
     try {
       let stats = fs.statSync(file);
@@ -40,4 +44,8 @@ module.exports = {
       }
     });
   },
+
+  mkdir: (filePath) => {
+    return fs.mkdirSync(filePath);
+  }
 };

@@ -6,6 +6,6 @@ module.exports = class main extends controller {
   }
 
   index() {
-    this.res.end('hello, the world');
+    this.res.end('hello, the world 2');
   }
 };

@@ -2,7 +2,7 @@ const dbConfig = {
   default: 'mongodb',
 
   mongodb: {
-    DATABASE: 'userPreference',
+    DATABASE: 'releaseManageemnt',
     USER: 'enhuizhu',
     PASSWORD: '123456',
   },

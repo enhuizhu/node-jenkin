@@ -1,5 +1,5 @@
 describe('notification', () => {
-  let notification = require('../../src/services/notification');
+  const notification = require('../../src/services/notification');
 
   it('test pub sub', () => {
     var cb = jasmine.createSpy('cb');

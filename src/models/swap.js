@@ -69,13 +69,5 @@ module.exports = class swap extends model{
       });
     });
   }
-
-  standardResponse(err, r, resolve, reject) {
-    if (err) {
-      reject(this.getString(err));
-    } else {
-      resolve(this.getString(r));
-    }
-  }
     
 };

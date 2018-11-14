@@ -41,4 +41,12 @@ export default class model {
       return obj;
     }
   }
+
+  standardResponse(err, r, resolve, reject, needString = true) {
+    if (err) {
+      reject(needString ? this.getString(err) : err);
+    } else {
+      resolve(needString ? this.getString(r) : r);
+    }
+  }
 }

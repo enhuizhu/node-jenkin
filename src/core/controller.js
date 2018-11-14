@@ -3,6 +3,8 @@ export default class controller {
     this.models = {};
     this.setEvents();
     // this.setReqRes(req, res);
+    this.sendErrorMsg = this.sendErrorMsg.bind(this);
+    this.sendSuccessMsg = this.sendSuccessMsg.bind(this);
   }
 
   setEvents() {

@@ -9,9 +9,9 @@ const content = 'import model from \'../core/model.js\';\n\n' +
     'module.exports = class ' +
     model +
     ' extends model{\n' +
-    '\tconstructor() {\n' +
-    '\t\tsuper();\n' +
-    '\t}\n' +
+    '  constructor() {\n' +
+    '    super();\n' +
+    '  }\n' +
     '}';
 
 fs.writeFile('./src/models/' + model + '.js', content, function(err) {
